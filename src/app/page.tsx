@@ -42,7 +42,6 @@ export default function Home() {
       e.preventDefault();
       if (!file) return;
       const params = {
-          // Bucket: process.env.PUBLIC_S3_BUCKET_NAME as string,
           Bucket: process.env.NEXT_PUBLIC_S3_BUCKET_NAME as string,
           Key: file.name,
           Body: file,
